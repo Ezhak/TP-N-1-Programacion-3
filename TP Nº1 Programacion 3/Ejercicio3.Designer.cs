@@ -59,6 +59,7 @@ namespace TP_Nº1_Programacion_3
             // Femenino
             // 
             this.Femenino.AutoSize = true;
+            this.Femenino.Checked = true;
             this.Femenino.Location = new System.Drawing.Point(6, 19);
             this.Femenino.Name = "Femenino";
             this.Femenino.Size = new System.Drawing.Size(71, 17);
@@ -125,6 +126,7 @@ namespace TP_Nº1_Programacion_3
             // radioButton1
             // 
             this.radioButton1.AutoSize = true;
+            this.radioButton1.Checked = true;
             this.radioButton1.Location = new System.Drawing.Point(6, 19);
             this.radioButton1.Name = "radioButton1";
             this.radioButton1.Size = new System.Drawing.Size(61, 17);
