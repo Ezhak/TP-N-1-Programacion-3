@@ -33,5 +33,11 @@ namespace TP_Nº1_Programacion_3
             var frmEj2 = new frmEj2(this);
             frmEj2.Show();
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            var frmEj3 = new Ejercicio3(this);
+            frmEj3.Show();
+        }
     }
 }
