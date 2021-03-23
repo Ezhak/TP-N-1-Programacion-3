@@ -12,14 +12,16 @@ namespace TP_Nº1_Programacion_3
 {
     public partial class Ejercicio3 : Form
     {
-        public Ejercicio3()
+        private frmMain FrmMain { get; set; }
+        public Ejercicio3(frmMain frmMain)
         {
+            this.FrmMain = frmMain;
             InitializeComponent();
         }
 
         private void Ejercicio3_Load(object sender, EventArgs e)
         {
-
+            FrmMain.Hide();
         }
 
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
@@ -45,6 +47,11 @@ namespace TP_Nº1_Programacion_3
         private void radioButton1_CheckedChanged_1(object sender, EventArgs e)
         {
 
+        }
+
+        private void Ejercicio3_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            FrmMain.Show();
         }
     }
 }
