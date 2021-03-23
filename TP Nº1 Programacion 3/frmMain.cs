@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace TP_Nº1_Programacion_3
 {
-    public partial class Form1 : Form
+    public partial class frmMain : Form
     {
-        public Form1()
+        public frmMain()
         {
             InitializeComponent();
         }

@@ -1,7 +1,7 @@
 ﻿
 namespace TP_Nº1_Programacion_3
 {
-    partial class Form1
+    partial class frmMain
     {
         /// <summary>
         /// Variable del diseñador necesaria.
