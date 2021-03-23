@@ -55,6 +55,7 @@ namespace TP_Nº1_Programacion_3
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(172, 94);
             this.checkedListBox1.TabIndex = 0;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // Femenino
             // 
@@ -101,6 +102,7 @@ namespace TP_Nº1_Programacion_3
             this.button1.TabIndex = 6;
             this.button1.Text = "Mostrar lo que se selecciono";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label1
             // 

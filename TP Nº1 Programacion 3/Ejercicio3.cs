@@ -53,5 +53,20 @@ namespace TP_Nº1_Programacion_3
         {
             FrmMain.Show();
         }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            string EleSelec;
+            foreach (var item in checkedListBox1.CheckedItems)
+            {
+               // EleSelec += item.ToString;
+            }
+
+        }
     }
 }
