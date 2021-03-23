@@ -44,8 +44,14 @@ namespace TP_Nº1_Programacion_3
 
         private void btnSingular_Click(object sender, EventArgs e)
         {
-            lstBox2.Items.Add(lstBox1.SelectedItem);
-            txtNombre.Text = "";
+            if(txtNombre.Text.Trim().Length != 0)
+            {
+                lstBox1.Items.Add(txtNombre.Text);
+            }
+            else
+            {
+                MessageBox.Show("Escriba por favor un nombre");
+            }
         }
 
         private void btnMultiple_Click(object sender, EventArgs e)
