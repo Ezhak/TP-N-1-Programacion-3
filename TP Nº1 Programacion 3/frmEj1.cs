@@ -36,19 +36,36 @@ namespace TP_Nº1_Programacion_3
                 MessageBox.Show("Ya existe ese nombre.", "Error");
             else if (txtNombre.Text.Trim().Length == 0)
                 MessageBox.Show("Nombre vacío.", "Error");
-            else
+            else 
+            { 
                 lstBox1.Items.Add(txtNombre.Text);
+                txtNombre.Text = "";
+            }
         }
 
         private void btnSingular_Click(object sender, EventArgs e)
         {
+            if(lstBox1.SelectedItem == null)
+            {
+                
+            }
+            else 
+            { 
             lstBox2.Items.Add(lstBox1.SelectedItem);
+            }
         }
 
         private void btnMultiple_Click(object sender, EventArgs e)
         {
-            foreach (string item in lstBox1.Items)
+            if (lstBox1.SelectedItem == null)
+            {
+
+            }
+            else
+            {
+                foreach (string item in lstBox1.Items)
                 lstBox2.Items.Add(item);
+            }
         }
     }
 }
