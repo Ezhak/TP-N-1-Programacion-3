@@ -157,6 +157,7 @@ namespace TP_Nº1_Programacion_3
             this.Controls.Add(this.checkedListBox1);
             this.Name = "Ejercicio3";
             this.Text = "Ejercicio3";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Ejercicio3_FormClosing);
             this.Load += new System.EventHandler(this.Ejercicio3_Load);
             this.Sexo.ResumeLayout(false);
             this.Sexo.PerformLayout();
