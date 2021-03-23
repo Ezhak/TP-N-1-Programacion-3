@@ -32,14 +32,12 @@ namespace TP_Nº1_Programacion_3
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            if(txtNombre.Text.Trim().Length != 0)
-            {
-                lstBox1.Items.Add(txtNombre.Text);
-            }
+            if (lstBox1.Items.Contains(txtNombre.Text))
+                MessageBox.Show("Ya existe ese nombre.", "Error");
+            else if (txtNombre.Text.Trim().Length == 0)
+                MessageBox.Show("Nombre vacío.", "Error");
             else
-            {
-                MessageBox.Show("Escriba por favor un nombre");
-            }
+                lstBox1.Items.Add(txtNombre.Text);
         }
 
         private void btnSingular_Click(object sender, EventArgs e)
@@ -56,9 +54,9 @@ namespace TP_Nº1_Programacion_3
 
         private void btnMultiple_Click(object sender, EventArgs e)
         {
-            foreach (int items in lstBox1.Items)
+            foreach (string item in lstBox1.Items)
             {
-                lstBox2.Items.Add(lstBox1.Items[items]);
+                lstBox2.Items.Add(item);
             }
         }
     }
