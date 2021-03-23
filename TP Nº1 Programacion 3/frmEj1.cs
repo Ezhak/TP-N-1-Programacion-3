@@ -45,27 +45,18 @@ namespace TP_Nº1_Programacion_3
 
         private void btnSingular_Click(object sender, EventArgs e)
         {
-            if(lstBox1.SelectedItem == null)
+            if (lstBox1.SelectedItem != null)
             {
-                
-            }
-            else 
-            { 
-            lstBox2.Items.Add(lstBox1.SelectedItem);
+                lstBox2.Items.Add(lstBox1.SelectedItem);
+                lstBox1.Items.Remove(lstBox1.SelectedItem);
             }
         }
 
         private void btnMultiple_Click(object sender, EventArgs e)
         {
-            if (lstBox1.SelectedItem == null)
-            {
-
-            }
-            else
-            {
-                foreach (string item in lstBox1.Items)
+            foreach (string item in lstBox1.Items)
                 lstBox2.Items.Add(item);
-            }
+            lstBox1.Items.Clear();
         }
     }
 }
