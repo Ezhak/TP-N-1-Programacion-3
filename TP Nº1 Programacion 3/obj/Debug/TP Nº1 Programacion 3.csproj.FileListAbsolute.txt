@@ -8,3 +8,10 @@ C:\Users\matia\Desktop\PROG-3\TP Nº1 Programacion 3\TP Nº1 Programacion 3\obj\
 C:\Users\matia\Desktop\PROG-3\TP Nº1 Programacion 3\TP Nº1 Programacion 3\obj\Debug\TP Nº1 Programacion 3.csproj.CoreCompileInputs.cache
 C:\Users\matia\Desktop\PROG-3\TP Nº1 Programacion 3\TP Nº1 Programacion 3\obj\Debug\TP Nº1 Programacion 3.exe
 C:\Users\matia\Desktop\PROG-3\TP Nº1 Programacion 3\TP Nº1 Programacion 3\obj\Debug\TP Nº1 Programacion 3.pdb
+C:\Users\matia\Desktop\TP1PROG3\TP Nº1 Programacion 3\obj\Debug\TP Nº1 Programacion 3.csprojAssemblyReference.cache
+C:\Users\matia\Desktop\TP1PROG3\TP Nº1 Programacion 3\obj\Debug\TP_Nº1_Programacion_3.Form1.resources
+C:\Users\matia\Desktop\TP1PROG3\TP Nº1 Programacion 3\obj\Debug\TP_Nº1_Programacion_3.Properties.Resources.resources
+C:\Users\matia\Desktop\TP1PROG3\TP Nº1 Programacion 3\obj\Debug\TP Nº1 Programacion 3.csproj.GenerateResource.cache
+C:\Users\matia\Desktop\TP1PROG3\TP Nº1 Programacion 3\obj\Debug\TP Nº1 Programacion 3.csproj.CoreCompileInputs.cache
+C:\Users\matia\Desktop\TP1PROG3\TP Nº1 Programacion 3\obj\Debug\TP Nº1 Programacion 3.exe
+C:\Users\matia\Desktop\TP1PROG3\TP Nº1 Programacion 3\obj\Debug\TP Nº1 Programacion 3.pdb
