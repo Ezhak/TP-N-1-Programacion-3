@@ -42,22 +42,13 @@ namespace TP_Nº1_Programacion_3
 
         private void btnSingular_Click(object sender, EventArgs e)
         {
-            if(txtNombre.Text.Trim().Length != 0)
-            {
-                lstBox1.Items.Add(txtNombre.Text);
-            }
-            else
-            {
-                MessageBox.Show("Escriba por favor un nombre");
-            }
+            lstBox2.Items.Add(lstBox1.SelectedItem);
         }
 
         private void btnMultiple_Click(object sender, EventArgs e)
         {
             foreach (string item in lstBox1.Items)
-            {
                 lstBox2.Items.Add(item);
-            }
         }
     }
 }
