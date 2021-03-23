@@ -31,7 +31,7 @@
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnSingular = new System.Windows.Forms.Button();
+            this.btnMoverUno = new System.Windows.Forms.Button();
             this.btnMultiple = new System.Windows.Forms.Button();
             this.lstBox1 = new System.Windows.Forms.ListBox();
             this.lstBox2 = new System.Windows.Forms.ListBox();
@@ -63,15 +63,15 @@
             this.btnAgregar.UseVisualStyleBackColor = true;
             this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
-            // btnSingular
+            // btnMoverUno
             // 
-            this.btnSingular.Location = new System.Drawing.Point(223, 123);
-            this.btnSingular.Name = "btnSingular";
-            this.btnSingular.Size = new System.Drawing.Size(41, 23);
-            this.btnSingular.TabIndex = 3;
-            this.btnSingular.Text = ">";
-            this.btnSingular.UseVisualStyleBackColor = true;
-            this.btnSingular.Click += new System.EventHandler(this.btnSingular_Click);
+            this.btnMoverUno.Location = new System.Drawing.Point(223, 123);
+            this.btnMoverUno.Name = "btnMoverUno";
+            this.btnMoverUno.Size = new System.Drawing.Size(41, 23);
+            this.btnMoverUno.TabIndex = 3;
+            this.btnMoverUno.Text = ">";
+            this.btnMoverUno.UseVisualStyleBackColor = true;
+            this.btnMoverUno.Click += new System.EventHandler(this.btnMoverUno_Click);
             // 
             // btnMultiple
             // 
@@ -81,7 +81,7 @@
             this.btnMultiple.TabIndex = 4;
             this.btnMultiple.Text = ">>";
             this.btnMultiple.UseVisualStyleBackColor = true;
-            this.btnMultiple.Click += new System.EventHandler(this.btnMultiple_Click);
+            this.btnMultiple.Click += new System.EventHandler(this.btnMoverTodos_Click);
             // 
             // lstBox1
             // 
@@ -107,7 +107,7 @@
             this.Controls.Add(this.lstBox2);
             this.Controls.Add(this.lstBox1);
             this.Controls.Add(this.btnMultiple);
-            this.Controls.Add(this.btnSingular);
+            this.Controls.Add(this.btnMoverUno);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
@@ -126,7 +126,7 @@
         private System.Windows.Forms.Label lblNombre;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.Button btnAgregar;
-        private System.Windows.Forms.Button btnSingular;
+        private System.Windows.Forms.Button btnMoverUno;
         private System.Windows.Forms.Button btnMultiple;
         private System.Windows.Forms.ListBox lstBox1;
         private System.Windows.Forms.ListBox lstBox2;

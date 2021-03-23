@@ -43,7 +43,7 @@ namespace TP_Nº1_Programacion_3
             }
         }
 
-        private void btnSingular_Click(object sender, EventArgs e)
+        private void btnMoverUno_Click(object sender, EventArgs e)
         {
             if (lstBox1.SelectedItem != null)
             {
@@ -52,7 +52,7 @@ namespace TP_Nº1_Programacion_3
             }
         }
 
-        private void btnMultiple_Click(object sender, EventArgs e)
+        private void btnMoverTodos_Click(object sender, EventArgs e)
         {
             foreach (string item in lstBox1.Items)
                 lstBox2.Items.Add(item);
