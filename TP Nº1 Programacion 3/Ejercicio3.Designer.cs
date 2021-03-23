@@ -35,11 +35,12 @@ namespace TP_Nº1_Programacion_3
             this.Sexo = new System.Windows.Forms.GroupBox();
             this.button1 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
+            this.Estado = new System.Windows.Forms.GroupBox();
+            this.Casado = new System.Windows.Forms.RadioButton();
             this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.label2 = new System.Windows.Forms.Label();
             this.Sexo.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.Estado.SuspendLayout();
             this.SuspendLayout();
             // 
             // checkedListBox1
@@ -77,7 +78,6 @@ namespace TP_Nº1_Programacion_3
             this.Masculino.Name = "Masculino";
             this.Masculino.Size = new System.Drawing.Size(73, 17);
             this.Masculino.TabIndex = 3;
-            this.Masculino.TabStop = true;
             this.Masculino.Text = "Masculino";
             this.Masculino.UseVisualStyleBackColor = true;
             this.Masculino.CheckedChanged += new System.EventHandler(this.Masculino_CheckedChanged);
@@ -114,29 +114,29 @@ namespace TP_Nº1_Programacion_3
             this.label1.TabIndex = 7;
             this.label1.Text = "Usted selecciono uno de los siguientes elementos:";
             // 
-            // groupBox1
+            // Estado
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(199, 74);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(93, 73);
-            this.groupBox1.TabIndex = 5;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Estado civil";
+            this.Estado.Controls.Add(this.Casado);
+            this.Estado.Controls.Add(this.radioButton2);
+            this.Estado.Location = new System.Drawing.Point(199, 74);
+            this.Estado.Name = "Estado";
+            this.Estado.Size = new System.Drawing.Size(93, 73);
+            this.Estado.TabIndex = 5;
+            this.Estado.TabStop = false;
+            this.Estado.Text = "Estado civil";
             // 
-            // radioButton1
+            // Casado
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Checked = true;
-            this.radioButton1.Location = new System.Drawing.Point(6, 19);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(61, 17);
-            this.radioButton1.TabIndex = 2;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Casado";
-            this.radioButton1.UseVisualStyleBackColor = true;
-            this.radioButton1.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
+            this.Casado.AutoSize = true;
+            this.Casado.Checked = true;
+            this.Casado.Location = new System.Drawing.Point(6, 19);
+            this.Casado.Name = "Casado";
+            this.Casado.Size = new System.Drawing.Size(61, 17);
+            this.Casado.TabIndex = 2;
+            this.Casado.TabStop = true;
+            this.Casado.Text = "Casado";
+            this.Casado.UseVisualStyleBackColor = true;
+            this.Casado.CheckedChanged += new System.EventHandler(this.radioButton1_CheckedChanged_1);
             // 
             // radioButton2
             // 
@@ -145,16 +145,24 @@ namespace TP_Nº1_Programacion_3
             this.radioButton2.Name = "radioButton2";
             this.radioButton2.Size = new System.Drawing.Size(58, 17);
             this.radioButton2.TabIndex = 3;
-            this.radioButton2.TabStop = true;
             this.radioButton2.Text = "Soltero";
             this.radioButton2.UseVisualStyleBackColor = true;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(15, 367);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.TabIndex = 8;
             // 
             // Ejercicio3
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(362, 450);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.Estado);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Sexo);
@@ -165,8 +173,8 @@ namespace TP_Nº1_Programacion_3
             this.Load += new System.EventHandler(this.Ejercicio3_Load);
             this.Sexo.ResumeLayout(false);
             this.Sexo.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.Estado.ResumeLayout(false);
+            this.Estado.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -180,8 +188,9 @@ namespace TP_Nº1_Programacion_3
         private System.Windows.Forms.GroupBox Sexo;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.GroupBox Estado;
+        private System.Windows.Forms.RadioButton Casado;
         private System.Windows.Forms.RadioButton radioButton2;
+        private System.Windows.Forms.Label label2;
     }
 }

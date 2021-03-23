@@ -61,12 +61,35 @@ namespace TP_Nº1_Programacion_3
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string EleSelec;
-            foreach (var item in checkedListBox1.CheckedItems)
+            string EleSelec=string.Empty;
+            if (Femenino.Checked)
             {
-               // EleSelec += item.ToString;
+                EleSelec += "Femenino, ";
+            }
+            else
+            {
+                EleSelec += "Masculino, ";
+            }
+            if (Casado.Checked)
+            {
+                EleSelec += "Casado, ";
+            }
+            else
+            {
+                EleSelec += "Soltero, ";
             }
 
+            foreach (var item in checkedListBox1.CheckedItems)
+
+            {
+                EleSelec += item.ToString();
+                EleSelec += ", ";
+            }
+
+            EleSelec=EleSelec.TrimEnd(' ');
+            EleSelec=EleSelec.TrimEnd(',');
+            EleSelec += ".";
+            label2.Text=EleSelec;
         }
     }
 }
