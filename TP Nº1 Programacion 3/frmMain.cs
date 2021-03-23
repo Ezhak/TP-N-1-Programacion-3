@@ -27,5 +27,15 @@ namespace TP_Nº1_Programacion_3
             var frmEj1 = new frmEj1(this);
             frmEj1.Show();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
