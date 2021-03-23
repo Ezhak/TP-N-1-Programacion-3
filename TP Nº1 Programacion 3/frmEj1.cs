@@ -29,5 +29,31 @@ namespace TP_Nº1_Programacion_3
         {
             frmMain.Hide();
         }
+
+        private void btnAgregar_Click(object sender, EventArgs e)
+        {
+            if(txtNombre.Text.Trim().Length != 0)
+            {
+                lstBox1.Items.Add(txtNombre.Text);
+            }
+            else
+            {
+                MessageBox.Show("Escriba por favor un nombre");
+            }
+        }
+
+        private void btnSingular_Click(object sender, EventArgs e)
+        {
+            lstBox2.Items.Add(lstBox1.SelectedItem);
+            txtNombre.Text = "";
+        }
+
+        private void btnMultiple_Click(object sender, EventArgs e)
+        {
+            foreach (int items in lstBox1.Items)
+            {
+                lstBox2.Items.Add(lstBox1.Items[items]);
+            }
+        }
     }
 }
