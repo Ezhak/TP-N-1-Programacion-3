@@ -1,7 +1,7 @@
 ﻿
 namespace TP_Nº1_Programacion_3
 {
-    partial class Form2
+    partial class frmEj1
     {
         /// <summary>
         /// Required designer variable.
@@ -29,10 +29,19 @@ namespace TP_Nº1_Programacion_3
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            this.SuspendLayout();
+            // 
+            // frmEj1
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Name = "frmEj1";
             this.Text = "Form2";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEj1_FormClosing);
+            this.Load += new System.EventHandler(this.frmEj1_Load);
+            this.ResumeLayout(false);
+
         }
 
         #endregion

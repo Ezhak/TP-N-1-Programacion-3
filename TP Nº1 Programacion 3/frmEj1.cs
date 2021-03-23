@@ -10,11 +10,24 @@ using System.Windows.Forms;
 
 namespace TP_Nº1_Programacion_3
 {
-    public partial class Form2 : Form
+    public partial class frmEj1 : Form
     {
-        public Form2()
+        private Form frmMain { get; set; }
+
+        public frmEj1(frmMain frmMain)
         {
+            this.frmMain = frmMain;
             InitializeComponent();
+        }
+
+        private void frmEj1_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmMain.Show();
+        }
+
+        private void frmEj1_Load(object sender, EventArgs e)
+        {
+            frmMain.Hide();
         }
     }
 }
