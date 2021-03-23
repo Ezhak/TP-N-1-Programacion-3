@@ -61,6 +61,7 @@
             this.btnAgregar.TabIndex = 2;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = true;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnSingular
             // 
@@ -70,6 +71,7 @@
             this.btnSingular.TabIndex = 3;
             this.btnSingular.Text = ">";
             this.btnSingular.UseVisualStyleBackColor = true;
+            this.btnSingular.Click += new System.EventHandler(this.btnSingular_Click);
             // 
             // btnMultiple
             // 
@@ -79,6 +81,7 @@
             this.btnMultiple.TabIndex = 4;
             this.btnMultiple.Text = ">>";
             this.btnMultiple.UseVisualStyleBackColor = true;
+            this.btnMultiple.Click += new System.EventHandler(this.btnMultiple_Click);
             // 
             // lstBox1
             // 
@@ -108,7 +111,7 @@
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmEj1";
             this.Text = "Ejercicio 1";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.frmEj1_FormClosing);
