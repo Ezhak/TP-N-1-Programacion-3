@@ -12,22 +12,22 @@ namespace TP_Nº1_Programacion_3
 {
     public partial class frmEj1 : Form
     {
-        private Form frmMain { get; set; }
+        private Form FrmMain { get; set; }
 
         public frmEj1(frmMain frmMain)
         {
-            this.frmMain = frmMain;
+            this.FrmMain = frmMain;
             InitializeComponent();
         }
 
         private void frmEj1_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frmMain.Show();
+            FrmMain.Show();
         }
 
         private void frmEj1_Load(object sender, EventArgs e)
         {
-            frmMain.Hide();
+            FrmMain.Hide();
         }
     }
 }

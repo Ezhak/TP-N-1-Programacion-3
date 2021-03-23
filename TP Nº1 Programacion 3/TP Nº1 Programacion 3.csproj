@@ -52,6 +52,12 @@
     <Compile Include="frmEj1.Designer.cs">
       <DependentUpon>frmEj1.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmEj2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEj2.Designer.cs">
+      <DependentUpon>frmEj2.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmMain.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -62,6 +68,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="frmEj1.resx">
       <DependentUpon>frmEj1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEj2.resx">
+      <DependentUpon>frmEj2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMain.resx">
       <DependentUpon>frmMain.cs</DependentUpon>
